@@ -1,0 +1,121 @@
+{
+  "input": {
+    "workflow": {
+      "60": {
+        "inputs": {
+          "filename_prefix": "Qwen-image-layers",
+          "images": [
+            "83",
+            0
+          ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+          "title": "SaveImage"
+        }
+      },
+      "74": {
+        "inputs": {
+          "image": "22bc90ad7c102572d9e46b5d3bc049b0b05c90242b3fdc7a0e11cfd1cc3d272b.png"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+          "title": "LoadImage"
+        }
+      },
+      "82": {
+        "inputs": {
+          "text": "lanczos",
+          "image": [
+            "74",
+            0
+          ]
+        },
+        "class_type": "ImageScaleToMaxDimension",
+        "_meta": {
+          "title": "ImageScaleToMaxDimension"
+        }
+      },
+      "83": {
+        "inputs": {
+          "text": [
+            "116",
+            0
+          ],
+          "image": [
+            "82",
+            0
+          ]
+        },
+        "class_type": "f754a936-daaf-4b6e-9658-41fdc54d301d",
+        "_meta": {
+          "title": "f754a936-daaf-4b6e-9658-41fdc54d301d"
+        }
+      },
+      "115": {
+        "inputs": {
+          "text": [
+            "116",
+            0
+          ]
+        },
+        "class_type": "1ea4fa01-a81b-4420-a03c-f60019e69a92",
+        "_meta": {
+          "title": "1ea4fa01-a81b-4420-a03c-f60019e69a92"
+        }
+      },
+      "116": {
+        "inputs": {
+          "filename": "A cinematic medium shot of a beautiful young woman with fair skin and a joyful, radiant smile, looking back over her shoulder. She has voluminous, curly auburn hair styled in a loose, windblown updo. She is standing on a rugged, rocky coastline overlooking a sun-drenched ocean. She wears a vintage, long-sleeved, high-collared dress in an off-white, crinkled fabric with delicate smocking on the bodice and a simple brown sash at her waist. In the background, the ocean sparkles brightly under the sun, and a majestic tall ship with full sails is visible in the distance. The scene is illuminated by the warm, golden light of the late afternoon, creating a soft, romantic, and nostalgic atmosphere with a shallow depth of field that keeps the woman in sharp focus.",
+          "value": [
+            "129",
+            0
+          ]
+        },
+        "class_type": "PrimitiveStringMultiline",
+        "_meta": {
+          "title": "Prompt"
+        }
+      },
+      "117": {
+        "inputs": {
+          "filename_prefix": "Qwen-image-layers",
+          "images": [
+            "115",
+            0
+          ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+          "title": "SaveImage"
+        }
+      },
+      "129": {
+        "inputs": {
+          "text": "Qwen3-VL-2B-Instruct",
+          "image": [
+            "74",
+            0
+          ]
+        },
+        "class_type": "AILab_QwenVL",
+        "_meta": {
+          "title": "AILab_QwenVL"
+        }
+      },
+      "131": {
+        "inputs": {
+          "value": null,
+          "source": [
+            "129",
+            0
+          ]
+        },
+        "class_type": "PreviewAny",
+        "_meta": {
+          "title": "PreviewAny"
+        }
+      }
+    }
+  }
+}
